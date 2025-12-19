@@ -79,7 +79,7 @@ dotnet test
 ## Arquitetura e Modelagem
 
 - Foi utilizada uma **API REST** com ASP.NET Core, seguindo boas práticas de separação de responsabilidades.
-- A persistência foi feita com **SQL Server**, por ser um banco relacional amplamente utilizado em cenários fiscais e corporativos.
+- A persistência foi feita com **SQL Server**, por ser um banco relacional amplamente utilizado em cenários fiscais e corporativos, oferecendo melhor desempenho e previsibilidade em consultas estruturadas, com uso eficiente de índices, filtros e ordenações, quando comparado a soluções NoSQL para esse tipo de carga.
 - O **Entity Framework Core** foi utilizado para abstração do acesso a dados.
 - A lógica de negócio foi centralizada em **Services**, evitando controllers inchados.
 - O upload de XML foi tratado via **multipart/form-data**, conforme padrão para envio de arquivos.
